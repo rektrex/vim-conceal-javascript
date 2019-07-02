@@ -7,7 +7,7 @@ syntax clear javascriptOperator
 
 syntax match javascriptOperator "++" conceal cchar=⧺
 
-syntax match javascriptOperator "=\@<!===\@!" conceal cchar=═
+syntax match javascriptOperator "=\@<!===\@!" conceal cchar=≖
 syntax match javascriptOperator "=\@<!====\@!" conceal cchar=≡
 syntax match javascriptOperator "!=" conceal cchar=≠
 syntax match javascriptOperator "!==" conceal cchar=≢
@@ -20,6 +20,7 @@ syntax match javascriptOperator ">>" conceal cchar=»
 syntax match javascriptOperator "||" conceal cchar=∥
 
 syntax match javascriptOperator "->" conceal cchar=→
+syntax match jsArrowFunction "=>" conceal cchar=⇒
 
 hi! link javascriptOperator Operator
 hi! link Conceal Operator
